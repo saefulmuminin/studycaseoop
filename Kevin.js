@@ -23,3 +23,6 @@ class BangunDatar {
         return 1/2 * (a + b) * tinggi
     }
 }
+
+const persegi = new BangunDatar()
+console.log(persegi.luasPersegi(9))
