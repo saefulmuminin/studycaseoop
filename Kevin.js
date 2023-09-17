@@ -25,4 +25,22 @@ class BangunDatar {
 }
 
 const persegi = new BangunDatar()
-console.log(persegi.luasPersegi(9))
+const segitiga = new BangunDatar()
+const lingkaran = new BangunDatar()
+const trapesium = new BangunDatar()
+const persegiPanjang = new BangunDatar()
+
+// LUAS PERSEGI
+console.log(`Luas Persegi: ${persegi.luasPersegi(9)}`)
+
+// LUAS PERSEGI PANJANG
+console.log(`Luas Persegi Panjang: ${persegiPanjang.luasPersegiPanjang(12, 5)}`)
+
+// LUAS  SEGITIGA
+
+// LUAS TRAPESIUM
+console.log(`Luas Trapesium: ${trapesium.luasTrapesium(12,8,7)}`)
+
+// LUAS Lingkaran
+console.log(`Luas Lingkaran: ${lingkaran.luasLingkaran(21)}`)
+
