@@ -1,5 +1,11 @@
 class BangunDatar {
-  constructor() {}
+  constructor(nama) {
+    this.nama = nama;
+  }
+
+  namaBangunDatar() {
+    return "Bangun Datar: " + this.nama;
+  }
 
   hitungLuas() {}
 
@@ -8,7 +14,7 @@ class BangunDatar {
 
 class Persegi extends BangunDatar {
   constructor(sisi) {
-    super();
+    super("persegi");
     this.sisi = sisi;
   }
 
@@ -23,7 +29,7 @@ class Persegi extends BangunDatar {
 
 class PersegiPanjang extends BangunDatar {
   constructor(panjang, lebar) {
-    super();
+    super("persegi Panjang: ");
     this.panjang = panjang;
     this.lebar = lebar;
   }
@@ -39,7 +45,7 @@ class PersegiPanjang extends BangunDatar {
 
 class Lingkaran extends BangunDatar {
   constructor(jariJari) {
-    super();
+    super("Lingkaran");
     this.jariJari = jariJari;
   }
 
@@ -56,14 +62,14 @@ const persegi1 = new Persegi(5);
 const persegiPanjang1 = new PersegiPanjang(5, 3);
 const lingkaran1 = new Lingkaran(7);
 
-console.log("Persegi :");
+console.log(persegi1.namaBangunDatar());
 console.log("Luas:", persegi1.hitungLuas());
 console.log("Keliling:", persegi1.hitungKeliling());
 
-console.log("Persegi Panjang :");
+console.log(persegiPanjang1.namaBangunDatar());
 console.log("Luas:", persegiPanjang1.hitungLuas());
 console.log("Keliling:", persegiPanjang1.hitungKeliling());
 
-console.log("Lingkaran :");
+console.log(lingkaran1.namaBangunDatar());
 console.log("Luas:", lingkaran1.hitungLuas());
 console.log("Keliling:", lingkaran1.hitungKeliling());
