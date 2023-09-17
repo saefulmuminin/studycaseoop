@@ -100,7 +100,7 @@ class BangunDatar {
   const persegiPanjang1 = new PersegiPanjang(5, 3, "persegi panjang");
   const lingkaran1 = new Lingkaran(7, "lingkaran");
   const trapesium1 = new Trapesium(6, 10, 4, 7, 8, "trapesium");
-  const segitiga1 = new Segitiga(6, 4, 5, 5, 7, "sehitiga");
+  const segitiga1 = new Segitiga(6, 4, 5, 5, 7, "segitiga");
   
   console.log(persegi1.namaBangunDatar());
   console.log("Luas:", persegi1.hitungLuas());
